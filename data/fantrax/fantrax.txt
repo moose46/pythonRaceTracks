@@ -1,0 +1,31 @@
+DRIVER	SALARY
+Denny Hamlin	10000
+Brad Keselowski	10000
+Martin Truex Jr.    11000
+Kevin Harvick	11000
+Erik Jones	9000
+Aric Almirola	9000
+Cole Custer	7000
+Alex Bowman	11000
+Kurt Busch	10000
+William Byron	11000
+Kyle Busch	12000
+Chase Elliott	12000
+Tyler Reddick	10000
+Clint Bowyer	0
+Ty Dillon	4000
+Michael McDowell    8000
+Daniel Suarez	9000
+Ryan Blaney	12000
+Corey LaJoie	7000
+Christopher Bell    9000
+Quin Houff	0
+Josh Bilicki	0
+Garrett Smithley    0
+Austin Dillon	10000
+Chris Buescher	9000
+Ryan Preece	3000
+Joey Logano	11000
+Matt DiBenedetto    5000
+Bubba Wallace	8000
+Ricky Stenhouse Jr. 7000
