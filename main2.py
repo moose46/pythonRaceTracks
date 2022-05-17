@@ -4,7 +4,7 @@ __project__ = 'Fluent Python'
 # Author: Robert W. Curtiss
 # main1.py was created on May 03 2022 @ 3:44 PM
 # Project: pythonRaceTracks
-#
+# uses DriverResults from driver_results2.py
 import collections
 import csv
 from collections import namedtuple
