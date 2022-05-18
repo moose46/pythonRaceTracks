@@ -44,9 +44,13 @@ class RaceBet:
     def data_file_name(self) -> Path:
         self._data_file_name = self._date_of_race.strftime('%Y%m%d')
 
-        the_path = Path.cwd() / 'data' / f'{self.race_track}' / f'{self._data_file_name}.txt'
+        the_path = (
+            Path.cwd()
+            / 'data'
+            / f'{self.race_track}'
+            / f'{self._data_file_name}.txt'
+        )
         return the_path
-
 
     @date_of_race.setter
     def date_of_race(self, d):

@@ -26,6 +26,7 @@ class DriverRaceResults:
     driver = diver name
     manufacturer = car manufacturer
     """
+
     def __init__(self, year: str = ''):
         self._year: str = year
 
@@ -36,7 +37,7 @@ class DriverRaceResults:
 
     @property
     def year(self):
-        """ Race year """
+        """Race year"""
         return self._year
 
 

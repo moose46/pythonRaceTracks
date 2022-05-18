@@ -1,5 +1,5 @@
 __author__ = 'Robert W. Curtiss'
-__project__ = 'Python Basics'
+__project__ = 'Python RaceTrack'
 
 import csv
 import os
@@ -19,12 +19,14 @@ Author: Robert W. Curtiss
 ===================================================
 """
 
+
 class DriverRaceResults:
     """
     pos = finish position
     driver = diver name
     manufacturer = car manufacturer
     """
+
     def __init__(self, year: str = ''):
         self._year: str = year
 
@@ -35,10 +37,12 @@ class DriverRaceResults:
 
     @property
     def year(self):
-        """ Race year """
+        """Race year"""
         return self._year
+
     def __repr__(self):
         return f'{self.driver} {self.pos}'
+
 
 def read_the_data_file(data_file_name: Path) -> [DriverRaceResults]:
     """
@@ -70,7 +74,7 @@ def read_the_data_file(data_file_name: Path) -> [DriverRaceResults]:
                 _,
                 _,
             ) = row_data(*row)
-                # results_data.BONUS = f.name[:4] # put the year in the bonus field
+            # results_data.BONUS = f.name[:4] # put the year in the bonus field
             data.append(fc)
     return data
 
