@@ -1,16 +1,14 @@
-RACETRACK, DATE,GREG,BOB
+RACETRACK,DATE,GREG,BOB
 daytona,02/20/2022, Denny Hamlin,Brad Keselowski
 california,02/27/2022, Chase Elliott,Ryan Blaney
 las vegas,03/06/2022, Ryan Blaney,Joey Logano
 phoenix,03/13/2022, Martin Truex Jr.,Christopher Bell
 atlanta,03/20/2022, Chase Elliott,Ryan Blaney
 cota,03/27/2022, Chase Elliott,Alex Bowman
-richmond,04/04/2022, William Byron,Alex Bowman
+richmond,04/03/2022, William Byron,Alex Bowman
 martinsville,04/09/2022, Chase Elliott,William Byron
 bristol,04/17/2022, Ryan Blaney,Christopher Bell
 talladega,04/24/2022, Ryan Blaney,Daniel Suarez
 dover,05/02/2022, Chase Elliott,Denny Hamlin
 darlington,05/08/2022, Martin Truex Jr.,Joey Logano
 kansas,05/15/2022, Chase Elliott,Kyle Busch
-texas,05/21/2022,Bob,Greg
-

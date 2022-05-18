@@ -42,7 +42,7 @@ class RaceBet:
 
     @property
     def data_file_name(self) -> Path:
-        self._data_file_name = self._date_of_race.strftime('%Y%m%d')
+        self._data_file_name = self.date_of_race.strftime('%Y%m%d')
 
         the_path = (
             Path.cwd()
@@ -67,7 +67,7 @@ class RaceBet:
         )
 
 
-def get_data(file_name: str = 'bets.txt') -> [RaceBet]:
+def get_the_bets(file_name: str = 'bets.txt') -> [RaceBet]:
     """
     Gets all data for a track from the data/track name directory
     driver, car, manufacturer,laps,start,led,pts,bonus, penalty
@@ -81,18 +81,17 @@ def get_data(file_name: str = 'bets.txt') -> [RaceBet]:
         for row in reader:
             results_data = row_data(*row)  # results_data is a tuple
             bet = RaceBet()
-            (
-                bet.race_track,
-                bet.date_of_race,
-                bet.greg_selected,
-                bet.bob_selected,
-            ) = row_data(*row)
-            data.append(bet)
+            try:
+                bet.race_track, bet.date_of_race, bet.greg_selected,  bet.bob_selected  = row_data(*row)
+                data.append(bet)
+            except:
+                pass
+                # print(f'****{data}')
     return data
 
 
-r = get_data()
+r = get_the_bets()
 for x in r:
-    d = read_data_file.read_the_data_file(data_file_name=x.data_file_name)
-    for i in d:
-        print(i)
+     d = read_data_file.read_the_race_data_file(data_file_name=x.data_file_name, race_track=x.race_track)
+     for i in d:
+         print(i)
