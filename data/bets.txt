@@ -9,6 +9,6 @@ richmond,04/03/2022, William Byron,Alex Bowman
 martinsville,04/09/2022, Chase Elliott,William Byron
 bristol,04/17/2022, Ryan Blaney,Christopher Bell
 talladega,04/24/2022, Ryan Blaney,Daniel Suarez
-dover,05/02/2022, Chase Elliott,Denny Hamlin
+dover,05/01/2022, Chase Elliott,Denny Hamlin
 darlington,05/08/2022, Martin Truex Jr.,Joey Logano
 kansas,05/15/2022, Chase Elliott,Kyle Busch

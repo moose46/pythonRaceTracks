@@ -6,6 +6,8 @@ import os
 from collections import namedtuple
 from pathlib import Path
 
+from models import RaceBet, DriverRaceResults
+
 """
 ====================================================
 Author: Robert W. Curtiss
@@ -20,31 +22,7 @@ Author: Robert W. Curtiss
 """
 
 
-class DriverRaceResults:
-    """
-    pos = finish position
-    driver = diver name
-    manufacturer = car manufacturer
-    """
-
-    def __init__(self, year: str = ''):
-        self._year: str = year
-
-    pos: int
-    driver: str
-    manufacturer: str
-    car: int
-    race_track: str
-    @property
-    def year(self):
-        """Race year"""
-        return self._year
-
-    def __repr__(self):
-        return f'{self.race_track:12} - {self.driver} {self.pos}'
-
-
-def read_the_race_data_file(data_file_name: Path, race_track: str) -> [DriverRaceResults]:
+def read_the_race_data_file(bet: RaceBet) -> [DriverRaceResults]:
     """
     Gets all data for a track from the data/track name directory
     driver, car, manufacturer,laps,start,led,pts,bonus, penalty
@@ -52,11 +30,11 @@ def read_the_race_data_file(data_file_name: Path, race_track: str) -> [DriverRac
     :return: list of DriverRaceResults
     """
     data: [DriverRaceResults] = list()
-    if not os.path.isdir(data_file_name.parent):
-        os.mkdir(data_file_name.parent)
-    if not os.path.exists(data_file_name):
+    if not os.path.isdir(bet.data_file_name.parent):
+        os.mkdir(bet.data_file_name.parent)
+    if not os.path.exists(bet.data_file_name):
         return data
-    with open(str(data_file_name), 'r') as file:
+    with open(str(bet.data_file_name), 'r') as file:
         reader = csv.reader(file, delimiter='\t')
         row_data = namedtuple('result', next(reader), rename=True)
         for row in reader:
@@ -74,7 +52,7 @@ def read_the_race_data_file(data_file_name: Path, race_track: str) -> [DriverRac
                 _,
                 _,
             ) = row_data(*row)
-            fc.race_track = race_track
+            fc.race_track = bet.race_track
             # results_data.BONUS = f.name[:4] # put the year in the bonus field
             data.append(fc)
     return data
