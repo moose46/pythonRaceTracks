@@ -39,7 +39,9 @@ class DriverRaceResults:
     def year(self):
         """Race year"""
         return self._year
-
+    @year.setter
+    def year(self,value):
+        self._year = value
 
 def get_data(track_name: str = 'kansas') -> [DriverRaceResults]:
     """
@@ -69,6 +71,7 @@ def get_data(track_name: str = 'kansas') -> [DriverRaceResults]:
                     _,
                     _,
                 ) = row_data(*row)
+                fc.year = year
                 # results_data.BONUS = f.name[:4] # put the year in the bonus field
                 data.append(fc)
     return data

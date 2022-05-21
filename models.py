@@ -17,6 +17,13 @@ Author: Robert W. Curtiss
 """
 
 
+class Bet:
+    name: str = ''  # better name
+    driver: str = ''  # race car driver name
+    pos: int  # finish position
+    beers: int = 0  # number of beers won, 2 for first place, 1 for placing higher
+
+
 class RaceBet:
     """
     racetrack, race date, bob, greg,
@@ -28,16 +35,27 @@ class RaceBet:
     greg_selected: str
     _bob_finish: int = -1
     _greg_finish: int = -1
-    _data_file_name: str   # name of the data file
+    _data_file_name: str  # name of the data file
     bob_beers = 0
     greg_beers = 0
+
+    def __init__(self):
+        self._picks: [] = list()
+
+    @property
+    def picks(self):
+        return self._picks
+
+    @picks.setter
+    def picks(self, value):
+        self._picks.append(value)
 
     @property
     def bob_finish(self):
         return self._bob_finish
 
     @bob_finish.setter
-    def bob_finish(self, pos:int):
+    def bob_finish(self, pos: int):
         self._bob_finish = int(pos)
         if not self._greg_finish == -1:
             self.score()
@@ -67,18 +85,15 @@ class RaceBet:
         if self._greg_finish == 1:
             self.greg_beers += 1
 
-
-
-
     @property
     def data_file_name(self) -> Path:
         self._data_file_name = self.date_of_race.strftime('%Y%m%d')
 
         the_path = (
-            Path.cwd()
-            / 'data'
-            / f'{self.race_track}'
-            / f'{self._data_file_name}.txt'
+                Path.cwd()
+                / 'data'
+                / f'{self.race_track}'
+                / f'{self._data_file_name}.txt'
         )
         return the_path
 
@@ -94,6 +109,7 @@ class RaceBet:
             f' BOB: {self.bob_finish:<2} {self.bob_selected.capitalize():16}'
             f' GREG: {self.greg_finish:<2} {self.greg_selected.capitalize():16}'
             f' greg={self.greg_beers} bob={self.bob_beers}'
+            f' {self.picks}'
         )
 
 

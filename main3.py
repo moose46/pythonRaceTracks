@@ -17,7 +17,7 @@ import read_data_files as rdf
 
 TOP_FINISHERS = 5
 
-data = rdf.get_data('kansas')
+data = rdf.get_data('texas')
 year: str = '2016'
 
 for d in data:
@@ -25,6 +25,6 @@ for d in data:
 
     if int(d.pos) <= TOP_FINISHERS:
         if year != d.year:
-            print(f'==== {year} ====')
+            print(f'==== {d.year} ====')
             year = d.year
         print(f'{d.pos:<2} {d.driver:20} ')
