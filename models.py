@@ -21,12 +21,14 @@ class Bet:
     name: str = ''  # better name
     driver: str = ''  # race car driver name
     pos: int  # finish position
-    beers: int = 0  # number of beers won, 2 for first place, 1 for placing higher
+    beers: int = (
+        0  # number of beers won, 2 for first place, 1 for placing higher
+    )
 
 
 class RaceBet:
     """
-    racetrack, race date, bob, greg,
+    format = racetrack, race date, bob, greg
     """
 
     race_track: str
@@ -90,10 +92,10 @@ class RaceBet:
         self._data_file_name = self.date_of_race.strftime('%Y%m%d')
 
         the_path = (
-                Path.cwd()
-                / 'data'
-                / f'{self.race_track}'
-                / f'{self._data_file_name}.txt'
+            Path.cwd()
+            / 'data'
+            / f'{self.race_track}'
+            / f'{self._data_file_name}.txt'
         )
         return the_path
 

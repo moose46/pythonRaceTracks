@@ -17,7 +17,7 @@ import read_data_files as rdf
 
 TOP_FINISHERS = 5
 
-data = rdf.get_data('texas')
+data = rdf.get_data('charlotte')
 year: str = '2016'
 
 for d in data:

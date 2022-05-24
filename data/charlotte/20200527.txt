@@ -1,0 +1,41 @@
+POS	DRIVER	CAR	MANUFACTURER	LAPS	START	LED	PTS	BONUS	PENALTY
+1	Chase Elliott	9	Chevrolet	208	19	28	49	9	0
+2	Denny Hamlin	11	Toyota	208	29	0	35	0	0
+3	Ryan Blaney	12	Ford	208	18	2	52	18	0
+4	Ricky Stenhouse Jr.	47	Chevrolet	208	24	0	38	5	0
+5	Kurt Busch	1	Chevrolet	208	14	0	40	8	0
+6	Joey Logano	22	Ford	208	8	42	49	18	0
+7	Brad Keselowski	2	Ford	208	20	0	30	0	0
+8	Austin Dillon	3	Chevrolet	208	7	0	37	8	0
+9	Martin Truex Jr.	19	Toyota	208	15	0	28	0	0
+10	Kevin Harvick	4	Ford	208	16	63	40	13	0
+11	Jimmie Johnson	48	Chevrolet	208	40	0	26	0	0
+12	William Byron	24	Chevrolet	208	1	11	25	0	0
+13	John Hunter Nemechek	38	Ford	208	5	0	27	3	0
+14	Tyler Reddick	8	Chevrolet	208	13	0	23	0	0
+15	Matt DiBenedetto	21	Ford	208	4	10	30	8	0
+16	Clint Bowyer	14	Ford	208	39	0	21	0	0
+17	Ryan Newman	6	Ford	208	27	0	20	0	0
+18	Cole Custer	41	Ford	208	9	0	19	0	0
+19	Corey LaJoie	32	Ford	208	23	0	18	0	0
+20	Aric Almirola	10	Ford	208	6	0	17	0	0
+21	Christopher Bell	95	Toyota	208	12	0	18	2	0
+22	Chris Buescher	17	Ford	208	11	0	16	1	0
+23	Matt Kenseth	42	Chevrolet	207	26	0	14	0	0
+24	Ryan Preece	37	Chevrolet	207	22	0	13	0	0
+25	Michael McDowell	34	Ford	207	3	1	12	0	0
+26	Erik Jones	20	Toyota	207	10	0	11	0	0
+27	Ty Dillon	13	Chevrolet	207	25	0	10	0	0
+28	Daniel Suarez	96	Toyota	207	28	0	9	0	0
+29	Kyle Busch	18	Toyota	207	17	0	8	0	0
+30	Gray Gaulding	27	Ford	206	31	0	7	0	0
+31	Alex Bowman	5	Chevrolet	206	2	51	22	16	0
+32	Quin Houff	00	Chevrolet	205	35	0	5	0	0
+33	Timmy Hill	66	Toyota	205	34	0	0	0	0
+34	J.J. Yeley	77	Chevrolet	204	21	0	0	0	0
+35	B.J. McLeod	78	Chevrolet	203	32	0	0	0	0
+36	Josh Bilicki	7	Chevrolet	200	37	0	0	0	0
+37	Bubba Wallace	43	Chevrolet	165	38	0	2	1	0
+38	Brennan Poole	15	Chevrolet	86	30	0	1	0	0
+39	Joey Gase	51	Ford	8	36	0	0	0	0
+40	Garrett Smithley	53	Ford	0	33	0	0	0	0
